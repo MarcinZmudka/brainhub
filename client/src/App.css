@@ -1,0 +1,97 @@
+body{
+	z-index: 0;
+}
+.app {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	/* background-color: transparent; */
+	background-color: #f4f4f4;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.Form-box {
+	width: 40vw;
+	background-color: rgb(231, 231, 231);
+	box-shadow: #555 0px 0px 5px 0px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+	border-radius: 5px;
+}
+.Form-box::after, .Form-box::before{
+	content: '';
+	width: 50%;
+	height: 50%;
+	background-color: #ff6d6d;
+	position: absolute;
+	z-index: -1;
+	border-radius: 5px;
+}
+.Form-box::after{
+	bottom: -10%;
+	left: -10%;
+}
+.Form-box::before{
+	top: -10%;
+	right: -10%;
+
+}
+.form {
+	width: 60%;
+	margin: 0;
+	padding: 15px;
+	/* z-index: 10; */
+}
+@media (max-width: 800px) {
+	.Form-box {
+		width: 80vw;
+	}
+	.form {
+		width: 80%;
+	}
+}
+.datepicker-box {
+	width: 100%;
+	/* overflow: hidden; */
+}
+.react-datepicker__input-container {
+	border-radius: 10px;
+	margin: 10px 0;
+}
+.react-datepicker__input-container > input {
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+}
+
+.error-box {
+	background-color: #ff6d6db8;
+	border-radius: 5px;
+	border: 2px solid #ca3e3e;
+	padding: 10px;
+	margin: 5px;
+}
+.error-box > p {
+	margin: 2px;
+}
+.info-message-box {
+	background-color: #41c00e78;
+	border-radius: 5px;
+	border: 2px solid #41a308;
+	padding: 10px;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.info-message-box > p {
+	margin: 2px;
+}

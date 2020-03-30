@@ -1,0 +1,19 @@
+{
+  "name": "zadanie-rekrutacyjne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
+    "create-react-app": "^3.4.0",
+    "react-bootstrap": "^1.0.0-beta.17"
+  }
+}
